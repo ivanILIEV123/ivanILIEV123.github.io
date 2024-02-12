@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моята валентинка</title>
+    <style>
+      body {
+			text-align: center;
+			margin-top: 30px;
+			font-family: courier;
+			background-color: #b95da5;
+			color: #ff9ae9;
+		}
+        #valentineQuestion {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+        .answerButton {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: 'courier';
+            margin-bottom: 20px;
+            background-color:#8f477f;
+            color: #ff9ae9;
+            border-radius: 12px;
+            border: 2px solid #ff9ae9;
+        }
+    </style>
+</head>
+<body>
+    <div id="valentineQuestion"><b>Ще ми бъдеш ли валентинка бе гнидо?</b></div>
+    <button class="answerButton" onclick="location.href='thankyou.html'">Да</button>
+    <button class="answerButton" id="noButton">Защо бих?!?!</button>
+    <br>
+    <img src ='2.gif' alt = 'cat asking question' class="responsive">
+
+    <script>
+        document.getElementById('noButton').addEventListener('click', function() {
+            var yesButton = document.querySelector('button[onclick*="thankyou.html"]');
+            var currentFontSize = parseInt(window.getComputedStyle(yesButton).fontSize);
+            yesButton.style.fontSize = (currentFontSize + 10) + 'px';
+            alert("пробвай пак балъкьо"); // Increase font size by 5px
+        });
+    </script>
+</body>
+</html>

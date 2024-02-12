@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body {
+			text-align: center;
+			margin-top: 30px;
+			font-family: 'Courier';
+			background-color: #b95da5;
+			color: #ff9ae9;
+		}
+		#activityquestion {
+			font-size: 50px;
+            margin-bottom: 30px;
+		}
+		.activity-item {
+            display: inline-block;
+            margin: 10px;
+            vertical-align: top;
+			color: #FF9494;
+        }
+        .activity-item img {
+            width: 220px; 
+            height: auto;
+			padding: 10px;
+        }
+        .activity-item label {
+            display: block;
+        }
+		.button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: 'courier';
+            margin-bottom: 20px;
+			background-color:#8f477f;
+            color: #ff9ae9;
+            border-radius: 12px;
+            border: 2px solid #ff9ae9;
+        }
+	</style>
+</head>
+<body>
+	<div id="activityquestion"><b>Къде ще ходим?</b>
+	</div>
+	<div class = "activities-selection">
+		<div class="activity-item">
+			<img src="activities/planetarium.jpeg" alt ="aquarium">
+			<label><input type="checkbox" name="activities" value ="aquarium">ПЛАНЕТАРИУМ!!!!!</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/rest.jpeg" alt ="arcade">
+			<label><input type="checkbox" name="activities" value ="arcade">ресторантче</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/happy.jpeg" alt ="cinema">
+			<label><input type="checkbox" name="activities" value ="cinema">ХЕПИ(ИМА ОФЕРТИ)!!!!</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/hotel.jpeg" alt ="ceramics">
+			<label><input type="checkbox" name="activities" value ="ceramics">Хотел Драгалевци🤭</label>
+		</div>
+		<div class="activity-item">
+			<img src="activities/cinema.jpeg" alt ="kunsthalle">
+			<label><input type="checkbox" name="activities" value ="kunsthalle">или пък ще си направим кино вечер вкъщи</label>
+		</div>
+	</div>
+	<button class = "button" onclick="location.href='lastpage.html'">Айде свърши се с глупостите</button>
+</body>
+</html>

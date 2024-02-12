@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dessert</title>
+	<style>
+		body {
+			text-align: center;
+			margin-top: 30px;
+			font-family: 'Courier';
+			background-color: #b95da5;
+			color: #ff9ae9;
+		}
+		#dessertquestion {
+			font-size: 50px;
+			margin-bottom: 30px;
+			font-weight: bold;
+		}
+		.dessert-item {
+			display: inline-table;
+			margin: 10px;
+			vertical-align: top;
+			color: #FF9494;
+		}
+		.dessert-item img {
+            width: 220px; 
+            height: auto;
+			padding: 10px;
+        }
+		.dessert-item label {
+            display: block;
+        }
+		.button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 10px;
+            font-family: 'courier';
+            margin-bottom: 20px;
+			background-color:#8f477f;
+            color: #ff9ae9;
+            border-radius: 12px;
+            border: 2px solid #ff9ae9;
+        }
+	</style>
+</head>
+<body>
+	<div id = "dessertquestion"> Какво ще има за десерт? хихихи </div>
+	
+	<div class = "dessert-selection">
+		<div class = "dessert-item">
+			<img src = "food/desert.jpeg" alt ="boba">
+			<label><input type="checkbox" name="dessert" value="boba"> Без десерт(ОТНОВО)</label>
+		</div>	
+		<div class = "dessert-item">
+			<img src = "food/heets.jpg" alt ="churro">
+			<label><input type="checkbox" name="dessert" value="churro"> По една хийтска</label>
+		</div>	
+		<div class = "dessert-item">
+			<img src = "food/idk.jpeg" alt ="che">
+			<label><input type="checkbox" name="dessert" value="che"> После ще видим ...</label>
+		</div>	
+		<div class = "dessert-item">
+		</div>	
+		<div class = "dessert-item">
+		</div>	
+		<div class = "dessert-item">
+		</div>	
+	</div>
+	<button class = "button" onclick="location.href='activities.html'">ОЩЕ СЪВСЕМ МАЛКО</button>
+
+</body>
+</html>
